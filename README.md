@@ -27,3 +27,9 @@ myZhiHu.CreatePath()
 #step3: Instantiate ZhihuMain to save the crawled information
 myZhiHu.ZhihuMain()
 ```
+
+
+Error Reporting Solution:
+1. You'd better put your Python project and downloaded ZhiHu_C.py in the same directory.
+2. If there is no corresponding module for error display, you need to install the module name with PIP first, such as
+       PIP install pandas

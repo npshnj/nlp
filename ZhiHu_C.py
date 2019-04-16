@@ -1,9 +1,3 @@
-
-# coding: utf-8
-
-# In[224]:
-
-
 import os
 import requests
 from http.cookies import SimpleCookie
@@ -14,7 +8,7 @@ import json
 import brotli
 import time
 from pandas.io.json import json_normalize
-#设置pd的显示长度
+
 
 class Volume:
     def __init__(self, keyword, path, sleeptime, tab):
@@ -92,23 +86,5 @@ class Volume:
             #输出文件至指定路径下
             lib=self.path+tab+".csv"
             result_df.to_csv(lib,encoding='utf-8')
-        return result_dflist
-
-
-# In[225]:
-
-
-ser=Volume(['intel','i3'],r'C:\\Users\\jjsun\\Documents\\ZHIHU\\',5,['general','column'])
-
-
-# In[226]:
-
-
-ser.CreatePath()
-
-
-# In[227]:
-
-
-a=ser.ZhihuMain()
+        return result_df
 

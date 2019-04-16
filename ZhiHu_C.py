@@ -58,8 +58,8 @@ class Volume:
                     response.encoding='gzip'
                     html = response.text
                     if len(json.loads(html)['data'])==0:
-                        print(f"For tab {tab},keyword {keyword},page {i} finished, {numScc} records")
-                        spider_log.append(f"For  tab {tab},keyword {keyword},page {i} finished, {numScc} records")
+                        print(f"For tab- {tab},keyword- {keyword}, page {i} finished, {numScc} records")
+                        spider_log.append(f"For tab- {tab},keyword- {keyword}, page {i} finished, {numScc} records")
                         break
                     else:
                         r_dict=json.loads(html)['data']

@@ -14,7 +14,7 @@ class Volume:
     def __init__(self, keyword, path, sleeptime, tab):
         #定义搜索关键词list
         self.keyword=keyword
-        #定义爬去结果所在空间
+        #定义爬取结果储存路径
         self.path = path
         #定义请求网页间隔时间
         self.sleeptime = sleeptime

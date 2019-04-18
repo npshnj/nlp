@@ -1,7 +1,6 @@
 # NLP01-Q&A Websites ANL
-## Get data 
-
-### 1、Using ZhiHu_C.py to get the searching results from ZhiHu.com
+## 准备数据
+### 1、使用ZhiHu_C.py来替代
 
 Example:
 
